@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 import { useAppDispatch, useAppSelector } from '../../redux/hooks';
 import { startGame, updateScore, resetGame, renameHomeTeam, renameAwayTeam } from '../../redux/slices/scoreBoardSlice';
+import { addGameToSummary } from '../../redux/slices/gamesSummarySlice';
 
 import Button from '../../components/Elements/Button/Button';
 import Input from '../../components/Elements/Input/Input';
@@ -35,6 +36,7 @@ const ControlPanel = () => {
   };
 
   const finishGameHandler = () => {
+    dispatch(addGameToSummary(scoreBoard));
     dispatch(resetGame());
     setStartedStatus(false);
   };
