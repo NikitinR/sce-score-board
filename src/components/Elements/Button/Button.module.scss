@@ -1,0 +1,23 @@
+.Button {
+  display: inline-block;
+  padding: 8px 15px;
+  margin: 0 5px;
+  border: none;
+  background-color: #008cba; /* Green */
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+
+  &:hover {
+    background-color: #027ea8; /* Green */
+    cursor: pointer;
+  }
+
+  &:disabled {
+    background-color: #555555;
+    color: white;
+    cursor: default;
+  }
+}
