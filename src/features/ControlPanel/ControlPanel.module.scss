@@ -1,0 +1,28 @@
+.ControlPanel {
+  width: 700px;
+  padding: 12px 6px;
+  margin: 50px auto 50px;
+  background-color: rgb(122, 2, 2);
+  color: white;
+
+  .TitleEditor {
+    display: flex;
+    margin-bottom: 2px;
+
+    .InputWrapper {
+      width: 50%;
+      margin: 0 5px;
+      text-align: left;
+    }
+  }
+
+  .GameActions {
+    display: flex;
+    justify-content: space-between;
+
+    .ControlGroup {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
